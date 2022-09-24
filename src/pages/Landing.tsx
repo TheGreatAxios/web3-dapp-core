@@ -1,5 +1,5 @@
 import React from "react";
-import PageTemplate from '../internal/PageTemplate';
+import { PageTemplate } from '../internal';
 
 interface Props {}
 

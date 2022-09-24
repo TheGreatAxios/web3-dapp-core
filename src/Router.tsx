@@ -13,8 +13,8 @@ const router = createBrowserRouter([
   }
 ]);
 
-const Router = () => {
 
+const Router = () => {
 
   return (
     <div>

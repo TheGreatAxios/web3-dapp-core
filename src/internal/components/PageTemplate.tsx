@@ -1,5 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
+import {Navigation} from "./Navgiation";
 
 interface Props {
   children: JSX.Element | JSX.Element[];
@@ -13,13 +14,11 @@ const PageTemplateContainer = styled.div`
 `;
 
 
-const PageTemplate = (props: Props) => {
+export const PageTemplate = (props: Props) => {
   return (
     <PageTemplateContainer>
+      <Navigation />
       {props.children}
     </PageTemplateContainer>
   );
 };
-
-export default PageTemplate;
-
