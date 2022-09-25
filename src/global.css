@@ -6,15 +6,22 @@
  *
  */
 
-:root {
-  --qwik-dark-blue: #006ce9;
-  --qwik-light-blue: #18b6f6;
-  --qwik-light-purple: #ac7ff4;
-  --qwik-dark-purple: #713fc2;
+:root,
+:root.light {
+  --primary-color: #8758FF;
+  --secondary-color: #5CB8E4;
+  --background-color: #F2F2F2;
+  --accent-color: #181818;
+  --text-color: #181818;
+}
+[data-theme="dark"] {
+  --text-color: #F2F2F2;
+  --accent-color: #F2F2F2;
+  --background-color: #181818;
 }
 
 body {
-  background-color: #fafafa;
+  background-color: var(--background-color);
   font-family: 'Poppins', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   padding: 20px 20px 40px 20px;
 }
@@ -28,10 +35,6 @@ main {
   overflow: hidden;
 }
 
-h1,
-h2 {
-  margin: 0 0 5px 0;
-}
 
 .lightning {
   filter: hue-rotate(180deg);
@@ -40,25 +43,6 @@ h2 {
 section {
   padding: 20px;
   border-bottom: 10px solid var(--qwik-dark-blue);
-}
-
-ul {
-  list-style-type: square;
-  margin: 5px 0 30px 0;
-  padding-left: 25px;
-}
-
-li {
-  padding: 5px 0;
-}
-
-li::marker {
-  color: var(--qwik-light-blue);
-}
-
-a,
-a:visited {
-  color: var(--qwik-dark-blue);
 }
 
 a:hover {
@@ -101,25 +85,6 @@ footer a:hover {
   text-decoration: underline;
 }
 
-a.mindblow {
-  margin: 0 auto;
-  display: block;
-  background: var(--qwik-light-purple);
-  padding: 10px 20px;
-  border-radius: 10px;
-  border: 0;
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
-  width: fit-content;
-  border-bottom: 4px solid black;
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🤯</text></svg>")
-      16 0,
-    auto; /*!emojicursor.app*/
-}
-
-a.mindblow:hover {
-  border-bottom-width: 0px;
-  margin-bottom: 4px;
-  transform: translateY(4px);
+h1, h2, h3, h4, h5, h6, p {
+  color: var(--text-color);
 }
