@@ -1,5 +1,5 @@
 {
-  "name": "react",
+  "name": "web3_mint_dapp",
   "version": "0.1.2",
   "dependencies": {
     "react": "^18.2.0",
