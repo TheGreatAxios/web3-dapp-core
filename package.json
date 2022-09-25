@@ -1,6 +1,6 @@
 {
-  "name": "my-qwik-basic-starter",
-  "description": "Recommended for your first Qwik app",
+  "name": "web3-mint-dapp",
+  "description": "Easily Extendable Multi-Mint dApp",
   "engines": {
     "node": ">=15.0.0"
   },
