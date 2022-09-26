@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import Layout from '../internal/Layout';
 import { useParams } from 'react-router-dom';
-import {ISaleContract} from '../types';
-import {SaleContracts} from '../config';
+import { ICollection, ISaleContract } from '../types';
+import { Collections, SaleContracts } from '../config';
+import CollectionBase from '../components/collection/Base';
 
 const Container = styled.div`
   width: 100%;
@@ -16,6 +17,7 @@ const CollectionPage = () => {
 
   const { chainId, contractAddress } = useParams();
   const [sale, setSale] = useState<ISaleContract | undefined>(undefined);
+  const [collection, setCollection] = useState<ICollection | undefined>(undefined);
 
   useEffect(() => {
 
@@ -29,15 +31,35 @@ const CollectionPage = () => {
       }
     }
 
+    const loadCollection = () => {
+
+      const _collection: ICollection | undefined = Collections.find((coll: ICollection) => {
+        if (coll.chainId.toString() === chainId && coll.address === contractAddress) {
+          return coll;
+        }
+      });
+
+      setCollection(_collection);
+    }
+
+    loadCollection();
     loadSale();
-
-
   }, []);
+
+  if (!collection) {
+    return (
+      <Container>
+        <Layout>
+          <p>Collection Unsupported</p>
+        </Layout>
+      </Container>
+    );
+  }
 
   return (
     <Container>
       <Layout>
-        <p>Collection Page</p>
+        <CollectionBase collection={collection} sale={sale} />
       </Layout>
     </Container>
   );
