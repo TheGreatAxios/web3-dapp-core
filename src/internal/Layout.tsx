@@ -2,7 +2,7 @@ import React from "react";
 import styled from 'styled-components';
 
 const Container = styled.div`
-  width: 100%;
+  width: 75%;
   max-width: 100vw;
   overflow-x: hidden;
   position: absolute;
@@ -11,6 +11,12 @@ const Container = styled.div`
   right: 12.5%;
   height: auto;
   min-height: 100vh;
+
+  @media(max-width: 864px) {
+    width: 90%;
+    left: 5%;
+    right: 5%;
+  }
 `;
 
 const SubContainer = styled.div`
