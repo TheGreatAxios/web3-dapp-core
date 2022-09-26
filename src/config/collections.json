@@ -6,7 +6,7 @@
     "type": "erc721",
     "chainId": 1,
     "rpcUrl": "https://cloudflare-eth.com",
-    "graphics": []
+    "graphics": ["https://media.istockphoto.com/vectors/concept-of-non-fungible-token-hand-holding-a-phone-with-text-nft-pay-vector-id1309905479?k=20&m=1309905479&s=612x612&w=0&h=pPBvVtAoBe6oSo42eK04AltetH4Q6p7kyIi48NVODQc="]
   },
   {
     "name": "NFT Collection",

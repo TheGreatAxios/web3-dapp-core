@@ -3,7 +3,7 @@ import Collection from "../Collection";
 import { ICollection } from '../../../types';
 
 const Container = styled.div`
-  width: 75%;
+  width: 100%;
   height: auto;
   min-height: 150px;
   display: flex;

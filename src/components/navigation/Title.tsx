@@ -9,6 +9,10 @@ const Container = styled.div`
   h1 {
     padding-left: 16px;
   }
+  @media(max-width: 864px) {
+    width: 70%;
+    font-size: 1.5rem;
+  }
 `;
 
 const Title = () => {
@@ -20,4 +24,3 @@ const Title = () => {
 };
 
 export default Title;
-
