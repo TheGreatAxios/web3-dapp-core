@@ -1,0 +1,38 @@
+[
+  {
+    "name": "NFT Collection",
+    "symbol": "NFTC",
+    "address": "0xABC...",
+    "type": "erc721",
+    "chainId": 1,
+    "rpcUrl": "https://cloudflare-eth.com",
+    "graphics": []
+  },
+  {
+    "name": "NFT Collection",
+    "symbol": "NFTC",
+    "address": "0xABC...",
+    "type": "erc721",
+    "chainId": 1,
+    "rpcUrl": "https://cloudflare-eth.com",
+    "graphics": []
+  },
+  {
+    "name": "NFT Collection",
+    "symbol": "NFTC",
+    "address": "0xABC...",
+    "type": "erc721",
+    "chainId": 1,
+    "rpcUrl": "https://cloudflare-eth.com",
+    "graphics": []
+  },
+  {
+    "name": "NFT Collection",
+    "symbol": "NFTC",
+    "address": "0xABC...",
+    "type": "erc721",
+    "chainId": 1,
+    "rpcUrl": "https://cloudflare-eth.com",
+    "graphics": []
+  }
+]

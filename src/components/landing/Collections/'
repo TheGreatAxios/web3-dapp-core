@@ -1,0 +1,48 @@
+import styled from "styled-components";
+import { ICollection } from '../../../types';
+
+const Container = styled.div`
+  width: 22.5%;
+  height: 150px;
+  background: var(--secondary-background);
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  position: relative;
+`;
+
+const CollectionName = styled.h4``;
+const CollectionSymbol = styled.p`
+  color: var(--accent-color);
+`;
+const CollectionType = styled.p`
+  color: var(--secondary-color);
+`;
+
+const CollectionAbout = styled.div`
+  position: absolute;
+  top: 2.5%;
+  left: 2.5%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+`;
+
+const CollectionAboutRow = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
+export default({ collection } : { collection: ICollection }) => {
+
+  return (
+    <Container>
+      <CollectionAbout>
+        <CollectionName>{collection.name}</CollectionName>
+        <CollectionAboutRow>
+          <CollectionType>{collection.type}</CollectionType>
+          <CollectionSymbol>{collection.symbol}</CollectionSymbol>
+        </CollectionAboutRow>
+      </CollectionAbout>
+    </Container>
+  );
+};
