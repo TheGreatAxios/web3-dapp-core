@@ -3,14 +3,8 @@ import {ICollection} from '../../../types';
 import Row from './Row';
 
 const Container = styled.div`
-  width: 50%;
-  max-width: 50%;
+  width: 100%;
   overflow: hidden;
-  background: linear-gradient(
-      135deg,
-      var(--primary-color),
-      var(--secondary-color)
-    );
   color: var(--text-color);
   display: flex;
   flex-direction: column;

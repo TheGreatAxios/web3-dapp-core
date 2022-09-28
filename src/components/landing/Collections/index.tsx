@@ -5,10 +5,13 @@ import { ICollection } from '../../../types';
 const Container = styled.div`
   width: 100%;
   height: auto;
-  min-height: 150px;
+  min-height: 300px;
   display: flex;
   flex-direction: column;
   padding: 16px 0;
+  @media(max-width: 864px) {
+    min-height: 150px;
+  }
 `;
 const CollectionsRow = styled.div`
   display: flex;
@@ -17,6 +20,9 @@ const CollectionsRow = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 8px 0;
+  @media(max-width: 864px) {
+    padding: 4px;
+  }
 `;
 
 

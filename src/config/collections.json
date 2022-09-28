@@ -1,38 +1,11 @@
 [
   {
-    "name": "NFT Collection",
-    "symbol": "NFTC",
-    "address": "0xABC...",
+    "name": "Test2 Collection",
+    "symbol": "TEST",
+    "address": "0x459a4737611dDDdb79DA5C5827A1C143b0887c1B",
     "type": "erc721",
-    "chainId": 1,
-    "rpcUrl": "https://cloudflare-eth.com",
+    "chainId": 104734457,
+    "rpcUrl": "https://staging-v2.skalenodes.com/v1/actual-secret-cebalrai",
     "graphics": ["https://media.istockphoto.com/vectors/concept-of-non-fungible-token-hand-holding-a-phone-with-text-nft-pay-vector-id1309905479?k=20&m=1309905479&s=612x612&w=0&h=pPBvVtAoBe6oSo42eK04AltetH4Q6p7kyIi48NVODQc="]
-  },
-  {
-    "name": "NFT Collection",
-    "symbol": "NFTC",
-    "address": "0xABC...",
-    "type": "erc721",
-    "chainId": 1,
-    "rpcUrl": "https://cloudflare-eth.com",
-    "graphics": []
-  },
-  {
-    "name": "NFT Collection",
-    "symbol": "NFTC",
-    "address": "0xABC...",
-    "type": "erc721",
-    "chainId": 1,
-    "rpcUrl": "https://cloudflare-eth.com",
-    "graphics": []
-  },
-  {
-    "name": "NFT Collection",
-    "symbol": "NFTC",
-    "address": "0xABC...",
-    "type": "erc721",
-    "chainId": 1,
-    "rpcUrl": "https://cloudflare-eth.com",
-    "graphics": []
   }
 ]

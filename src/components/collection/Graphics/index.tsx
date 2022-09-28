@@ -3,7 +3,7 @@ import { ICollection } from '../../../types';
 import styled from 'styled-components';
 
 const Container = styled.div`
-  width: 50%;
+  width: 35%;
   height: auto;
   min-height: 35vh;
   background: none;
