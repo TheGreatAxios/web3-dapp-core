@@ -26,9 +26,18 @@ const Container = styled.div`
 const Label = styled.p`
   font-size: 1.15rem;
   font-weight: 700;
+  @media(max-width: 864px) {
+    font-size: 18px;
+  }
 `;
 
-const Value = styled.p``;
+const Value = styled.p`
+  word-break: break-word;
+  color: var(--primary-color);
+  @media(max-width: 864px) {
+    font-size: 14px;
+  }
+`;
 
 const AboutRow = ({
   label,

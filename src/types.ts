@@ -24,12 +24,12 @@ export interface IToken {
   name: string;
   symbol: string;
   decimals: number;
-  price: BigNumber;
+  price: string; // utilize ethers.utils.parseEther(price);
 }
 
 export interface ISaleContract {
+  saleAddress: string;
   isUnlimited: boolean;
   maxSupply: number | BigNumber;
   prices: {[key: string]: IToken};
-  functions: {[key: string]: IFunction};
 }

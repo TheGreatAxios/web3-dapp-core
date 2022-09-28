@@ -4,11 +4,12 @@ import { LightMode, DarkMode, Light } from '@styled-icons/material'
 import { AppGlobal } from '../../config';
 
 const Container = styled.div`
-  width: 5%;
+  width: 15%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 4px;
 `;
 
 const IconContainer = styled.div`

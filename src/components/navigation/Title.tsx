@@ -11,7 +11,9 @@ const Container = styled.div`
   }
   @media(max-width: 864px) {
     width: 70%;
-    font-size: 1.5rem;
+    h1 {
+      font-size: 1.15rem;
+    }
   }
 `;
 
