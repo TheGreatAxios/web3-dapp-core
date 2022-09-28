@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { ICollection, ISaleContract } from '../../types';
 import About from './About';
 import Graphics from './Graphics';
+import Mint from './Mint';
 
 const Container = styled.div`
   width: 100%;
@@ -23,11 +24,11 @@ const CollectionBase = ({ collection, sale }: { collection: ICollection, sale: I
   return (
     <Container>
       <Row>
-
+        {sale && <Mint collection={collection} sale={sale} />}
       </Row>
       <Row>
         <About collection={collection} />
-        <Graphics collection={collection} />
+        {/* <Graphics collection={collection} /> */}
       </Row>
     </Container>
   );
