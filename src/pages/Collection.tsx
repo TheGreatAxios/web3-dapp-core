@@ -9,6 +9,8 @@ import CollectionBase from '../components/collection/Base';
 const Container = styled.div`
   width: 100%;
   height: 100vh;
+  max-width: 100vw;
+  overflow-x: hidden;
   min-height: 100vh;
   position: relative;
 `;

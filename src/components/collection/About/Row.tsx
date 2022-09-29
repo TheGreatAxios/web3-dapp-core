@@ -1,4 +1,3 @@
-import React from "react";
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -33,7 +32,6 @@ const Label = styled.p`
 
 const Value = styled.p`
   word-break: break-word;
-  color: var(--primary-color);
   @media(max-width: 864px) {
     font-size: 14px;
   }

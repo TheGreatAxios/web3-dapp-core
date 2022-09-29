@@ -31,14 +31,17 @@ const LandingAbout = () => {
     <Container>
       <AboutTitle>{Content.title}</AboutTitle>
       <AboutContentContainer>
-        <br />
-        <Title>{Content.section1.title}</Title>
-        <br />
-        <Data>{Content.section1.content}</Data>
-        <br />
-        <Title>{Content.section2.title}</Title>
-        <br />
-        <Data>{Content.section2.content}</Data>
+        {Content.sections && Content.sections.map((content: any, index: number) => {
+          return (
+            <div key={index}>
+              <br />
+              <Title>{content.title}</Title>
+              <br />
+              <Data>{content.content}</Data>
+              <br />
+            </div>
+          );
+        })}
       </AboutContentContainer>
     </Container>
   );

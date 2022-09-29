@@ -5,7 +5,8 @@ import { ConnectButton } from '@rainbow-me/rainbowkit';
 const Container = styled.div`
   width: 85%;
   height: 100%;
-  padding: 0 8px;
+  padding: 0px;
+  margin-right: 32px;
 `;
 
 const Web3Button = () => {

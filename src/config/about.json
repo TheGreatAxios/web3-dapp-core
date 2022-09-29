@@ -1,11 +1,13 @@
 {
   "title": "About the Project",
-  "section1": {
+  "sections": [
+    {
     "title": "Overview",
     "content": "NFT Mint dApp is a project showcasing the ability to have and offer multiple collections in the Web3 space.\n Hello World"
-  },
-  "section2": {
-    "title": "Other",
-    "content": "This project is in it's early stages. Use at your own risk. Loss of funds and assets may happen."
-  }
+    },
+    {
+      "title": "Other",
+      "content": "This project is in it's early stages. Use at your own risk. Loss of funds and assets may happen."
+    }
+  ]
 }
